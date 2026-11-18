@@ -1,0 +1,7 @@
+{
+  "radius_m": 210,
+  "K": 100,
+  "target_miss_rate": 0.001,
+  "train_miss_rate": 0.0037027702925382395,
+  "labelled_points": 206332
+}

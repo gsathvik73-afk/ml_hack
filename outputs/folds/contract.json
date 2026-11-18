@@ -1,0 +1,54 @@
+{
+  "seed": 42,
+  "fold_scheme": "GroupKFold(5), trip_id groups, shuffle=False, balanced by GPS-point count",
+  "fold_file": "outputs/folds/group_folds.csv",
+  "oof_required_columns": [
+    "group_id",
+    "segment_id",
+    "fold",
+    "score"
+  ],
+  "oof_score": "per-point probability; sums to 1 within each group",
+  "oof_optional_columns": [
+    "raw_score"
+  ],
+  "feature_columns": [
+    "distance",
+    "segment_fraction",
+    "segment_length_m",
+    "heading_diff_deg",
+    "speed_mps",
+    "acceleration_mps2",
+    "time_gap_s",
+    "distance_rank",
+    "distance_above_nearest_m",
+    "candidate_count",
+    "heading_diff_rank",
+    "distance_prev2_m",
+    "heading_diff_prev2_deg",
+    "distance_prev_m",
+    "heading_diff_prev_deg",
+    "distance_next_m",
+    "heading_diff_next_deg",
+    "distance_next2_m",
+    "heading_diff_next2_deg",
+    "connects_prev",
+    "connects_next",
+    "start_degree",
+    "end_degree",
+    "distance_ratio"
+  ],
+  "distance_ratio": "(distance + 1 metre) / (distance - distance_above_nearest_m + 1 metre)",
+  "top1_denominator": "all valid labelled points, including candidate misses and empty shortlists",
+  "log_loss_denominator": "valid points whose candidate set has exactly one positive",
+  "ranker_training": "at least 2 candidates and exactly 1 positive; recompute group sizes after splitting",
+  "candidate_settings": {
+    "radius_m": 210,
+    "K": 100,
+    "target_miss_rate": 0.001,
+    "train_miss_rate": 0.0037027702925382395,
+    "labelled_points": 206332
+  },
+  "point_flag_threshold_m": 208.3570580176556,
+  "student_test_status": "raw trips available; labels, candidates and features not generated"
+}
