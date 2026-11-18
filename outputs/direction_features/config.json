@@ -1,0 +1,68 @@
+{
+  "excluded_trip_ids": [
+    "00000033",
+    "00000054"
+  ],
+  "base_features": [
+    "distance",
+    "segment_fraction",
+    "segment_length_m",
+    "heading_diff_deg",
+    "speed_mps",
+    "acceleration_mps2",
+    "time_gap_s",
+    "distance_rank",
+    "distance_above_nearest_m",
+    "candidate_count",
+    "heading_diff_rank",
+    "distance_prev2_m",
+    "heading_diff_prev2_deg",
+    "distance_prev_m",
+    "heading_diff_prev_deg",
+    "distance_next_m",
+    "heading_diff_next_deg",
+    "distance_next2_m",
+    "heading_diff_next2_deg",
+    "connects_prev",
+    "connects_next",
+    "start_degree",
+    "end_degree",
+    "distance_ratio"
+  ],
+  "added_features": [
+    "heading_diff_smoothed_3s",
+    "signed_progress_mps_3s",
+    "direction_reliability_3s",
+    "smoothed_speed_mps_3s",
+    "turn_angle_3s",
+    "heading_diff_smoothed_5s",
+    "signed_progress_mps_5s",
+    "direction_reliability_5s"
+  ],
+  "half_windows_seconds": [
+    3,
+    5
+  ],
+  "heading_min_speed_mps": 0.5,
+  "heading_min_displacement_m": 1,
+  "params": {
+    "max_depth": 6,
+    "learning_rate": 0.29992371455654276,
+    "n_estimators": 50,
+    "min_child_weight": 2.968888733614375,
+    "subsample": 0.7653830020461954,
+    "colsample_bytree": 0.6828369642189636,
+    "reg_lambda": 0.1627321975366077,
+    "gamma": 1.0947188593873698
+  },
+  "seed": 42,
+  "fold_file": "outputs/folds/group_folds.csv",
+  "candidate_settings": {
+    "radius_m": 210,
+    "K": 100,
+    "target_miss_rate": 0.001,
+    "train_miss_rate": 0.0037027702925382395,
+    "labelled_points": 206332
+  },
+  "labels_modified": false
+}

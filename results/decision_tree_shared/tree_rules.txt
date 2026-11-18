@@ -1,0 +1,46 @@
+|--- distance_above_nearest_m <= 15.03
+|   |--- distance_rank <= 2.50
+|   |   |--- signed_progress_mps_5s <= -1.48
+|   |   |   |--- smoothed_speed_mps_3s <= 10.80
+|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |--- smoothed_speed_mps_3s >  10.80
+|   |   |   |   |--- truncated branch of depth 4
+|   |   |--- signed_progress_mps_5s >  -1.48
+|   |   |   |--- signed_progress_mps_5s <= 0.98
+|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |--- signed_progress_mps_5s >  0.98
+|   |   |   |   |--- truncated branch of depth 5
+|   |--- distance_rank >  2.50
+|   |   |--- signed_progress_mps_3s <= 0.53
+|   |   |   |--- smoothed_speed_mps_3s <= 2.93
+|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |--- smoothed_speed_mps_3s >  2.93
+|   |   |   |   |--- truncated branch of depth 5
+|   |   |--- signed_progress_mps_3s >  0.53
+|   |   |   |--- segment_fraction <= 0.00
+|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |--- segment_fraction >  0.00
+|   |   |   |   |--- truncated branch of depth 5
+|--- distance_above_nearest_m >  15.03
+|   |--- distance_above_nearest_m <= 31.10
+|   |   |--- signed_progress_mps_3s <= 2.62
+|   |   |   |--- direction_reliability_5s <= 0.57
+|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |--- direction_reliability_5s >  0.57
+|   |   |   |   |--- truncated branch of depth 5
+|   |   |--- signed_progress_mps_3s >  2.62
+|   |   |   |--- signed_progress_mps_3s <= 9.86
+|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |--- signed_progress_mps_3s >  9.86
+|   |   |   |   |--- truncated branch of depth 5
+|   |--- distance_above_nearest_m >  31.10
+|   |   |--- signed_progress_mps_3s <= 3.80
+|   |   |   |--- distance_rank <= 10.50
+|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |--- distance_rank >  10.50
+|   |   |   |   |--- truncated branch of depth 5
+|   |   |--- signed_progress_mps_3s >  3.80
+|   |   |   |--- start_degree <= 2.50
+|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |--- start_degree >  2.50
+|   |   |   |   |--- truncated branch of depth 5

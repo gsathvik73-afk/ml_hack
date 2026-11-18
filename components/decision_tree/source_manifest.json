@@ -1,0 +1,18 @@
+{
+  "source": "User-supplied decision-tree component",
+  "sha256": {
+    "decision_tree.py": "7d1248a01ec3812471807f21a000613463b1824e82b4e609c12796c5259846f3",
+    "evaluate_decision_tree.py": "71f7ec6637263adcc920ad394ca0d0209fc0535ec056f3a1ad6a9c53b13cebe9",
+    "DECISION_TREE_REPORT.md": "50e8ec7ef7b9a641f5fdc6f406cbeafb51c914c033b00c51924639fd81cdb251",
+    "README.md": "d4e2a3d41d3d8d2baed2eaa6d40ca5729699c7b6a9755766d53fa9ebda803c1f",
+    "requirements.txt": "e6b593db69945230332807287c1a264ff1d0cf0cd3517cfa992f8826458f8e23"
+  },
+  "original_metrics_comparable_to_shared_pipeline": false,
+  "differences": [
+    "nearest-reference-arc proxy labels instead of ordered DP alignment",
+    "20 midpoint-nearest candidates instead of frozen radius210m/K100",
+    "4 StratifiedGroupKFold instead of saved shared5folds",
+    "9 original predictors instead of shared32",
+    "all80 source trips instead of current78"
+  ]
+}

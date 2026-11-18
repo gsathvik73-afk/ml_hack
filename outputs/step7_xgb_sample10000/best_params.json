@@ -1,0 +1,20 @@
+{
+  "params": {
+    "max_depth": 6,
+    "learning_rate": 0.29992371455654276,
+    "n_estimators": 50,
+    "min_child_weight": 2.968888733614375,
+    "subsample": 0.7653830020461954,
+    "colsample_bytree": 0.6828369642189636,
+    "reg_lambda": 0.1627321975366077,
+    "gamma": 1.0947188593873698
+  },
+  "search_cv_top1": 0.7936171348233958,
+  "search_groups": 10000,
+  "search_rows": 554016,
+  "search_mode": "sample10000",
+  "seed": 42,
+  "selected_at": "2026-11-18T13:54:09.836407+05:30",
+  "fold_file": "outputs/folds/group_folds.csv",
+  "completed_trials": 50
+}

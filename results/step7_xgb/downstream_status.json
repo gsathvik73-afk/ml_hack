@@ -1,0 +1,12 @@
+{
+  "ranker_comparison": "complete",
+  "stacking": "pending LR/KNN/tree OOF files and final models",
+  "old_stacker": "not available",
+  "HMM": "complete; evaluated on student-test; not selected by the fixed rule",
+  "temperature": "1.0; no temperature fitted on student-test labels",
+  "tuned_oof": "results/step7_xgb/tuned_sample10000/oof_tuned_sample10000.csv",
+  "final_selection": "results/final_selection.json",
+  "comparison": "results/final_comparison.csv",
+  "export": "exports/final_model.zip",
+  "API": "artifact bundle prepared; server not deployed"
+}

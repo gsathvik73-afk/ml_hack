@@ -1,0 +1,31 @@
+{
+  "coordinate_order": [
+    "longitude",
+    "latitude"
+  ],
+  "projection": "WGS84 to per-trip UTM; zone=int((mean_lon+180)//6)+1; EPSG=(32600 north or 32700 south)+zone; always_xy=True",
+  "directed_arcs": true,
+  "distance_units": "metres",
+  "feature_dtype": "float32",
+  "missing_values": "NaN; no imputer or scaler for ranker",
+  "heading": "grid-north angle from previous GPS point to next GPS point; 0..360 degrees",
+  "stationary_cutoff_mps": 0.5,
+  "heading_neighbour_min_displacement_m": 1.0,
+  "context_offsets": [
+    -2,
+    -1,
+    1,
+    2
+  ],
+  "matching_mode": "whole-trip; future observations required",
+  "distance_ratio": "(distance + 1 metre) / (distance - distance_above_nearest_m + 1 metre)",
+  "softmax_temperature": 1.0,
+  "softmax": "per GPS group: exp(raw_score-max(raw_score))/sum(exp(raw_score-max(raw_score)))",
+  "inference_inputs": [
+    "nodes(lon,lat)",
+    "directed arcs(start,end)",
+    "track(lon,lat,time)"
+  ],
+  "reference_route_required": false,
+  "bad_gps_reference_filter_at_inference": false
+}

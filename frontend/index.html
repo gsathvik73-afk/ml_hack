@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PathSnap Demo</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="title">
+    <h1>PathSnap</h1>
+    <p id="model"></p>
+  </div>
+  <dl id="overall"></dl>
+</header>
+
+<main>
+  <aside>
+    <h2>Student-test trips</h2>
+    <p class="hint">Pick a trip to replay it on the map.</p>
+    <table>
+      <thead><tr>
+        <th>Trip</th><th class="n">Pings</th><th class="n">Top-1</th><th class="n">Macro F1</th><th class="n">Log loss</th><th class="n">Continuity</th>
+      </tr></thead>
+      <tbody id="rows"></tbody>
+      <tfoot id="total"></tfoot>
+    </table>
+    <h2 class="second">Selected trip</h2>
+    <dl id="detail"></dl>
+    <p class="note">Metrics use valid GPS pings and come from saved XGBoost predictions (<code>12_demo_data.ipynb</code>). Nothing is computed live.</p>
+  </aside>
+
+  <section id="live">
+    <div class="controls">
+      <button id="play">Play</button>
+      <button id="restart">Restart</button>
+      <label>Speed
+        <select id="speed">
+          <option value="5">5x</option><option value="10">10x</option><option value="25" selected>25x</option>
+          <option value="50">50x</option><option value="100">100x</option><option value="250">250x</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="follow" checked> Follow ping</label>
+      <button id="fit">Fit trip</button>
+      <input id="scrub" type="range" min="0" max="0" value="0" aria-label="Position in trip">
+    </div>
+    <div class="readout">
+      <div><span>Trip</span><b id="s-trip">-</b></div>
+      <div><span>Ping</span><b id="s-ping">0 / 0</b></div>
+      <div><span>Trip time</span><b id="s-time">0s</b></div>
+      <div><span>Running Top-1</span><b id="s-top1">-</b></div>
+      <div class="last"><span>Latest ping</span><b id="s-last" class="status">waiting</b></div>
+    </div>
+    <div id="map"></div>
+    <p class="legend">
+      <i class="sw match"></i>Predicted road, matches reference
+      <i class="sw miss"></i>Predicted road, wrong
+      <i class="sw ref"></i>Original (reference) road
+      <i class="dot"></i>GPS ping
+    </p>
+  </section>
+</main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

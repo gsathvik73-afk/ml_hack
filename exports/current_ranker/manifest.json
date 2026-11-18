@@ -1,0 +1,69 @@
+{
+  "created_at": "2026-11-18T15:44:28.367758+05:30",
+  "model": "xgboost_ranker",
+  "feature_version": "direction_32",
+  "feature_count": 32,
+  "hmm_enabled_by_default": false,
+  "selection_status": "provisional current ranker; final LR/KNN/decision-tree/stacking comparison pending consolidation",
+  "excluded_trip_ids": [
+    "00000033",
+    "00000054"
+  ],
+  "student_test_metrics": {
+    "top1": 0.8989039665970773,
+    "macro_f1": 0.9486220619118458,
+    "precision": 0.8989039665970773,
+    "recall": 0.8989039665970773,
+    "log_loss": 0.2760718040231859,
+    "candidate_coverage": 1.0,
+    "points": 19160,
+    "candidate_misses": 0,
+    "confusion_matrix": [
+      [
+        1165041,
+        1937
+      ],
+      [
+        1937,
+        17223
+      ]
+    ],
+    "final_fit_s": 49.940240004012594,
+    "prediction_s": 0.3686530189879704
+  },
+  "evaluation_scope": "repeated student-test development comparison; not fresh independent evaluator test",
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "shapely": "2.2.0",
+    "pyproj": "3.7.2",
+    "pyarrow": "24.0.0",
+    "scipy": "1.17.1",
+    "xgboost": "3.2.0",
+    "nbformat": "5.11.1"
+  },
+  "artifacts": {
+    "ranker.json": "55ec27f8338e93c21753f6fb98aa9c3010c23126f7735893cc63870024e87fa2",
+    "feature_columns.json": "825a68d57e309960b508562a51601a882488b3962b887a85a31cd6a6af62c8c6",
+    "candidate_settings.json": "c9f9fa160b1c3585165aa209b8c15b0b96d018d7f7b09f9534554abb3828cbed",
+    "direction_config.json": "4f2372a754f7955f8c31299f80d564099c4598ca693b1b2ef1b7849ca8c85edd",
+    "preprocessing.json": "5ca2ec1b1cdc25fa36694173083a723a5a61eb50d61d00225a5262ac0da8f9d0",
+    "training_exclusions.json": "9f89305ac7e99e00f790c6afcaf7e1bfbcdcb02e43631d5e0892f5578b732bf6",
+    "hmm_config.json": "73a7f684242569f0fac6ace93eb50e9cf0220a7d21a015cc71936ee8b9ca32e7",
+    "requirements.txt": "5f821e5b221621a04b4b3ad8572b795661711bd1b8b646e81c57da79d71094d0",
+    "README.md": "9eb939d3d72498a3e299dfc1f47a1ae77e1fffd131dda9d5295a802cdeff9cec",
+    "05_feature_helpers.ipynb": "2fd6d5451eea44bd0037bfdf937307b230abbaa15059441c5207e2fb05546231",
+    "05_direction_features.ipynb": "49a93ef4bb4de5ed46eac95b9efb4db07e1dcba835f4f9e434fa5b6c7839d3a8",
+    "08_hmm_helpers.ipynb": "748af3848f8a65610e3cca52f7bd266930dc4ce0fa53c51ccc8a30fdf1d7cc50"
+  },
+  "validation": {
+    "feature_count": 32,
+    "model_reloaded": true,
+    "source_predictions_equal": true,
+    "sample_rows": 22,
+    "complete_query": true,
+    "finite_scores": true,
+    "normalized_probabilities": true
+  },
+  "api_status": "artifact export; no LAN deployment claimed"
+}

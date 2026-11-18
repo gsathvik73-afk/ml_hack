@@ -1,0 +1,39 @@
+{
+  "params": {},
+  "seed": 42,
+  "rows": 11502356,
+  "features": [
+    "distance",
+    "segment_fraction",
+    "segment_length_m",
+    "heading_diff_deg",
+    "speed_mps",
+    "acceleration_mps2",
+    "time_gap_s",
+    "distance_rank",
+    "distance_above_nearest_m",
+    "candidate_count",
+    "heading_diff_rank",
+    "distance_prev2_m",
+    "heading_diff_prev2_deg",
+    "distance_prev_m",
+    "heading_diff_prev_deg",
+    "distance_next_m",
+    "heading_diff_next_deg",
+    "distance_next2_m",
+    "heading_diff_next2_deg",
+    "connects_prev",
+    "connects_next",
+    "start_degree",
+    "end_degree",
+    "distance_ratio"
+  ],
+  "fold_scheme": "GroupKFold(5), trip_id groups, shuffle=False, balanced by GPS-point count",
+  "candidate_settings": {
+    "radius_m": 210,
+    "K": 100,
+    "target_miss_rate": 0.001,
+    "train_miss_rate": 0.0037027702925382395,
+    "labelled_points": 206332
+  }
+}

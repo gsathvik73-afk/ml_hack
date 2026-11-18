@@ -1,0 +1,6 @@
+fold,trip_id,gps_points,labelled_points,misses,empty_points,single_candidate_points,candidate_rows,ranker_rows,ranker_groups,miss_rate,size_difference
+0,00000027,694,694,0,0,0,30192,30192,694,0.0,6
+1,00000037,677,677,0,0,0,60931,60931,677,0.0,23
+2,00000079,689,689,0,0,0,66483,66483,689,0.0,11
+3,00000045,640,640,0,0,0,23194,23194,640,0.0,60
+4,00000029,733,733,0,0,0,65609,65609,733,0.0,33

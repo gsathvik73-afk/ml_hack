@@ -1,0 +1,32 @@
+{
+  "data": "synthetic_only",
+  "real_model_fitted": false,
+  "base_model_order": [
+    "logistic_regression",
+    "knn",
+    "decision_tree",
+    "xgboost"
+  ],
+  "meta_feature_columns": [
+    "logistic_regression",
+    "knn",
+    "decision_tree",
+    "xgboost",
+    "distance",
+    "candidate_count"
+  ],
+  "validation_rejections": {
+    "missing_key": true,
+    "extra_key": true,
+    "duplicate_key": true,
+    "fold_mismatch": true,
+    "unnormalized": true,
+    "nonfinite": true,
+    "out_of_range": true
+  },
+  "label_independence": true,
+  "fold_training_scaler_only": true,
+  "per_group_softmax": true,
+  "unlabelled_test_inference": true,
+  "real_metrics_reported": false
+}

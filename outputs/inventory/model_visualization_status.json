@@ -1,0 +1,13 @@
+{
+  "feature_version": "direction_32",
+  "included": [
+    "xgboost",
+    "decision_tree"
+  ],
+  "skipped": {
+    "logistic_regression": "awaiting_user_files",
+    "knn": "awaiting_final_user_files_existing_notebook_is_pilot",
+    "stacking": "awaiting_four_base_OOF_and_final_models"
+  },
+  "scope": "available trained shared models only; not a completed five-model comparison"
+}

@@ -1,0 +1,55 @@
+{
+  "removed": [
+    {
+      "path": "outputs/candidates/ranker_candidates.csv",
+      "bytes": 526311608
+    },
+    {
+      "path": "outputs/candidates/ranker_groups.csv",
+      "bytes": 4791420
+    },
+    {
+      "path": "outputs/features/features.parquet",
+      "bytes": 594029274
+    },
+    {
+      "path": "outputs/student_test/features.parquet",
+      "bytes": 64087623
+    },
+    {
+      "path": "results/xgb_ranker/20261118_121050/oof_xgb_ranker.csv",
+      "bytes": 434467038
+    },
+    {
+      "path": "results/step7_xgb/untuned/oof_untuned.csv",
+      "bytes": 534101886
+    },
+    {
+      "path": "results/step7_xgb/tuned_sample10000/oof_tuned_sample10000.csv",
+      "bytes": 535555230
+    },
+    {
+      "path": "results/exclude_33_54/oof_xgb_ranker.csv",
+      "bytes": 331704821
+    },
+    {
+      "path": "results/step7_xgb/untuned/student_test_predictions.csv",
+      "bytes": 53199164
+    },
+    {
+      "path": "results/step7_xgb/tuned_sample10000/student_test_predictions.csv",
+      "bytes": 53385572
+    },
+    {
+      "path": "results/exclude_33_54/student_test_predictions.csv",
+      "bytes": 53404385
+    },
+    {
+      "path": "results/hmm/ranker/candidate_probabilities.parquet",
+      "bytes": 10935946
+    }
+  ],
+  "bytes_removed": 3195973967,
+  "kept": "raw data; current32 features and base-model OOF; fitted models; labels/folds/canonical candidates; historical summaries",
+  "regeneration": "Run historical notebooks from feature generation onward to rebuild removed historical predictions."
+}

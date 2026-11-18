@@ -1,0 +1,16 @@
+{
+  "before": {
+    "wrong": 18893,
+    "candidate_miss": 71,
+    "reverse_arc": 8169,
+    "other_shared_node": 6144,
+    "different_nodes": 4509
+  },
+  "direction_features": {
+    "wrong": 17046,
+    "candidate_miss": 71,
+    "reverse_arc": 6998,
+    "other_shared_node": 5627,
+    "different_nodes": 4350
+  }
+}

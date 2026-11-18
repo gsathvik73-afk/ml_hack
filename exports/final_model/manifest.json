@@ -1,0 +1,58 @@
+{
+  "created_at": "2026-11-18T14:04:07.911602+05:30",
+  "selected_model": "ranker",
+  "hmm_enabled": false,
+  "selection_rationale": "Within 0.2 percentage points of best student-test Top-1, then fewest disconnected or missing adjacent transitions, then shortest prediction time.",
+  "selection_metrics": {
+    "model": "ranker",
+    "top1": 0.8914926931106472,
+    "macro_f1": 0.9448555842616042,
+    "precision": 0.8914926931106472,
+    "recall": 0.8914926931106472,
+    "log_loss": 0.3106442378913834,
+    "candidate_coverage": 1.0,
+    "valid_points": 19160,
+    "candidate_misses": 0,
+    "confusion_matrix": [
+      [
+        1164899,
+        2079
+      ],
+      [
+        2079,
+        17081
+      ]
+    ],
+    "transition_pairs": 19150,
+    "reachable_pairs": 19141,
+    "disconnected_jumps": 9,
+    "missing_transition_pairs": 0,
+    "route_continuity": 0.9995300261096606,
+    "prediction_s": 0.5157659830001649,
+    "prediction_ms_per_trip": 51.576598300016485,
+    "timing_scope": "model plus optional decoder on precomputed features; excludes candidates/features",
+    "unsupported_transitions": 9
+  },
+  "timing_scope": "precomputed-feature model and optional decoder time; not complete API latency",
+  "feature_count": 24,
+  "artifacts": {
+    "ranker.json": "c575d5fdf4ee313654b83ef8aeda88797998b243a60c8a18e4c48e1b75ed9d95",
+    "feature_columns.json": "d2c010d3cd9d7c5d947880ab2491a96f264c77f09ec8dc050232ed52c65febdd",
+    "candidate_settings.json": "879cfb31383147b50cf24ded6a1a4ef15ad15cf0e5e1799562e7a9ec6bcd9e6b",
+    "preprocessing.json": "48e4631961c29bd96fbe8c52fa726bea02634b6a6b2f1263d465c78a6b7ab7e4",
+    "hmm_config.json": "54ef50e3f894e5732103c9110349c1d0e311c49850dda25800abee80f4854029",
+    "requirements.txt": "a800efc62a6ac941fc2bcc305666a5d138703a3f15daedb6e64bbbcb254a2087",
+    "README.md": "5c14e0f735c5826ffadc7b87da153813a74769115276913e11ba2489a7aef6b4",
+    "05_feature_helpers.ipynb": "2fd6d5451eea44bd0037bfdf937307b230abbaa15059441c5207e2fb05546231"
+  },
+  "validation": {
+    "model_reloaded": true,
+    "feature_order_matches": true,
+    "source_predictions_equal": true,
+    "sample_rows": 256,
+    "finite_scores": true,
+    "group_probability_sums": true
+  },
+  "deployment_status": "artifact bundle prepared; API not deployed",
+  "stacking_status": "pending teammates' three base-model artifacts and combiner"
+}

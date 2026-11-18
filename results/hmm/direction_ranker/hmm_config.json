@@ -1,0 +1,38 @@
+{
+  "beta": 1.0,
+  "emission_weight": 2.0,
+  "temperature": 1.0,
+  "gap_reset_s": 30,
+  "transition_distance_scale_floor_m": 20,
+  "unreachable_penalty": 20,
+  "transition_cost_cap": 100,
+  "topology": "directed reachability through full graph",
+  "transition_distance": "endpoint-bridge lower-bound surrogate; not shortest road distance",
+  "model_source": "results/direction_features",
+  "feature_count": 32,
+  "excluded_trip_ids": [
+    "00000033",
+    "00000054"
+  ],
+  "tuning_source": "results/direction_features/oof_xgb_ranker.csv",
+  "tuning_source_bytes": 332022225,
+  "tuning_source_mtime_ns": 1794994790910931757,
+  "tuning_trips": [
+    "00000027",
+    "00000037",
+    "00000079",
+    "00000045",
+    "00000029"
+  ],
+  "tuning_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tuning_points": 3433,
+  "tuning_top1": 0.935042237110399,
+  "posterior": "forward-backward marginals; Viterbi joint path reported separately",
+  "selected_at": "2026-11-18T15:28:58.178889+05:30"
+}

@@ -1,0 +1,7 @@
+{
+  "points": 3433,
+  "ranker_only_top1": 0.9321293329449462,
+  "hmm_top1": 0.935042237110399,
+  "gain_percentage_points": 0.29129041654528676,
+  "note": "Same five whole OOF tuning trips and valid-point denominator; development score, not independent test."
+}

@@ -1,0 +1,23 @@
+{
+  "coordinate_order": [
+    "longitude",
+    "latitude"
+  ],
+  "coordinate_system": "WGS84 to per-trip UTM, always_xy=True",
+  "utm_zone": "int((mean_lon+180)//6)+1; EPSG=(32600 north or 32700 south)+zone",
+  "feature_dtype": "float32",
+  "missing_values": "NaN, handled natively by XGBoost",
+  "stationary_mps": 0.5,
+  "context_point_offsets": [
+    -2,
+    -1,
+    1,
+    2
+  ],
+  "request_mode": "whole trip; future observations required",
+  "distance_ratio": "(distance+1)/(distance-distance_above_nearest_m+1)",
+  "probabilities": "stable softmax within each GPS group",
+  "temperature": 1.0,
+  "reference_route_required": false,
+  "reference_quality_filter_at_inference": false
+}

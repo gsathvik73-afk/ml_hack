@@ -7,3 +7,18 @@ venv/
 .env
 .env.*
 !.env.example
+.runtime/
+
+# Rebuildable duplicate and historical data caches
+outputs/candidates/ranker_candidates.csv
+outputs/candidates/ranker_groups.csv
+outputs/features/features.parquet
+outputs/student_test/features.parquet
+results/xgb_ranker/20261118_121050/oof_xgb_ranker.csv
+results/step7_xgb/untuned/oof_untuned.csv
+results/step7_xgb/tuned_sample10000/oof_tuned_sample10000.csv
+results/exclude_33_54/oof_xgb_ranker.csv
+results/step7_xgb/untuned/student_test_predictions.csv
+results/step7_xgb/tuned_sample10000/student_test_predictions.csv
+results/exclude_33_54/student_test_predictions.csv
+results/hmm/ranker/candidate_probabilities.parquet

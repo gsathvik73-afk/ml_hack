@@ -1,0 +1,19 @@
+{
+  "half_windows_seconds": [
+    3,
+    5
+  ],
+  "heading_min_speed_mps": 0.5,
+  "heading_min_displacement_m": 1,
+  "added_features": [
+    "heading_diff_smoothed_3s",
+    "signed_progress_mps_3s",
+    "direction_reliability_3s",
+    "smoothed_speed_mps_3s",
+    "turn_angle_3s",
+    "heading_diff_smoothed_5s",
+    "signed_progress_mps_5s",
+    "direction_reliability_5s"
+  ],
+  "feature_version": "direction_32"
+}

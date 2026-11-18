@@ -50,5 +50,5 @@
     "labelled_points": 206332
   },
   "point_flag_threshold_m": 208.3570580176556,
-  "student_test_status": "raw trips available; labels, candidates and features not generated"
+  "student_test_status": "preprocessed with frozen settings; untuned/tuned ranker and tuned HMM comparison complete; final evaluator partition unused"
 }

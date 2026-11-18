@@ -1,0 +1,6 @@
+{
+  "decoder_predict_s": 68.60520846804138,
+  "timing_scope": "network loading/projection, directed topology, transition preparation, Viterbi and forward-backward",
+  "includes": "network loading/projection, directed topology, transition preparation, Viterbi and forward-backward",
+  "excludes": "feature generation and base model inference"
+}

@@ -1,0 +1,43 @@
+{
+  "selected_name": "ranker",
+  "model_path": "results/step7_xgb/tuned_sample10000/model.json",
+  "model_dir": "results/step7_xgb/tuned_sample10000",
+  "feature_list_path": "outputs/folds/contract.json",
+  "hmm_enabled": false,
+  "hmm_config_path": null,
+  "comparison_path": "results/final_comparison.csv",
+  "rationale": "Within 0.2 percentage points of best student-test Top-1, then fewest disconnected or missing adjacent transitions, then shortest prediction time.",
+  "metrics": {
+    "model": "ranker",
+    "top1": 0.8914926931106472,
+    "macro_f1": 0.9448555842616042,
+    "precision": 0.8914926931106472,
+    "recall": 0.8914926931106472,
+    "log_loss": 0.3106442378913834,
+    "candidate_coverage": 1.0,
+    "valid_points": 19160,
+    "candidate_misses": 0,
+    "confusion_matrix": [
+      [
+        1164899,
+        2079
+      ],
+      [
+        2079,
+        17081
+      ]
+    ],
+    "transition_pairs": 19150,
+    "reachable_pairs": 19141,
+    "disconnected_jumps": 9,
+    "missing_transition_pairs": 0,
+    "route_continuity": 0.9995300261096606,
+    "prediction_s": 0.5157659830001649,
+    "prediction_ms_per_trip": 51.576598300016485,
+    "timing_scope": "model plus optional decoder on precomputed features; excludes candidates/features",
+    "unsupported_transitions": 9
+  },
+  "timing_scope": "precomputed-feature model and optional decoder time; not complete API latency",
+  "scope": "available ranker variants only; stacking and teammate models pending merge",
+  "selection_dataset": "student-test development holdout; final evaluator trips unused"
+}

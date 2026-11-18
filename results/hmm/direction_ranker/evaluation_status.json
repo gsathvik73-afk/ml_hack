@@ -1,0 +1,11 @@
+{
+  "model_source": "results/direction_features",
+  "feature_count": 32,
+  "selection_performed": false,
+  "decoder_config_frozen_from_training_oof": true,
+  "tuning_exclusions": [
+    "00000033",
+    "00000054"
+  ],
+  "root_integration_note": "No promotion; use this current-source comparison when integrating the registry."
+}

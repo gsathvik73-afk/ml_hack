@@ -1,0 +1,10 @@
+{
+  "radius_m": 210,
+  "K": 100,
+  "sort_order": [
+    "group_id",
+    "distance",
+    "segment_id"
+  ],
+  "segment_ids": "zero-based arc row IDs"
+}

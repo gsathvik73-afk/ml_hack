@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "active_model": "xgboost",
+  "feature_version": "direction_32",
+  "feature_columns_path": "results/direction_features/feature_columns.json",
+  "training_exclusions_path": "outputs/training_exclusions.json",
+  "fold_file": "outputs/folds/group_folds.csv",
+  "models": {
+    "xgboost": {
+      "status": "trained",
+      "kind": "xgboost_ranker",
+      "model_path": "results/direction_features/model.json",
+      "feature_columns_path": "results/direction_features/feature_columns.json",
+      "oof_path": "results/direction_features/oof_xgb_ranker.csv",
+      "student_test_scores_path": "results/direction_features/student_test_predictions.csv",
+      "metrics_path": "results/direction_features/student_test_metrics.json",
+      "hmm_config_path": "results/hmm/direction_ranker/hmm_config.json",
+      "hmm_enabled_by_default": false
+    },
+    "decision_tree": {
+      "status": "trained",
+      "kind": "sklearn_classifier",
+      "model_path": "results/decision_tree_shared/model.joblib",
+      "feature_columns_path": "results/decision_tree_shared/feature_columns.json",
+      "oof_path": "results/decision_tree_shared/oof_decision_tree.csv",
+      "student_test_scores_path": "results/decision_tree_shared/student_test_predictions.csv",
+      "metrics_path": "results/decision_tree_shared/student_test_metrics.json",
+      "hmm_config_path": null
+    },
+    "logistic_regression": {
+      "status": "awaiting_user_files",
+      "kind": "sklearn_classifier"
+    },
+    "knn": {
+      "status": "awaiting_final_user_files_existing_notebook_is_pilot",
+      "kind": "sklearn_classifier"
+    },
+    "stacking": {
+      "status": "awaiting_four_base_OOF_and_final_models",
+      "kind": "stacking",
+      "base_model_order": [
+        "logistic_regression",
+        "knn",
+        "decision_tree",
+        "xgboost"
+      ]
+    }
+  },
+  "selection_status": "provisional user-selected ranker; final five-model comparison pending LR/KNN/stacking",
+  "candidate_settings_path": "outputs/candidates/settings.json"
+}

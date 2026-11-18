@@ -1,0 +1,11 @@
+{
+  "radius_m": 210,
+  "K": 100,
+  "ordering": [
+    "group_id",
+    "distance",
+    "segment_id"
+  ],
+  "segment_id": "zero-based row in the trip's arcs file",
+  "empty_shortlist": "retain point in point metadata; decoder handles missing observations explicitly"
+}

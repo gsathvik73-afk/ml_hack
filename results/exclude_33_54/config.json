@@ -1,0 +1,29 @@
+{
+  "excluded_trip_ids": [
+    "00000033",
+    "00000054"
+  ],
+  "remaining_trips": 78,
+  "training_points": 182635,
+  "removed_labelled_points": 23697,
+  "candidate_rows": 9202147,
+  "params": {
+    "max_depth": 6,
+    "learning_rate": 0.29992371455654276,
+    "n_estimators": 50,
+    "min_child_weight": 2.968888733614375,
+    "subsample": 0.7653830020461954,
+    "colsample_bytree": 0.6828369642189636,
+    "reg_lambda": 0.1627321975366077,
+    "gamma": 1.0947188593873698
+  },
+  "fold_file": "outputs/folds/group_folds.csv",
+  "seed": 42,
+  "candidate_settings": {
+    "radius_m": 210,
+    "K": 100,
+    "target_miss_rate": 0.001,
+    "train_miss_rate": 0.0037027702925382395,
+    "labelled_points": 206332
+  }
+}
