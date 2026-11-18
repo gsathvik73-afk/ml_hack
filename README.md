@@ -22,10 +22,12 @@ Run cells from top to bottom, starting from the project directory.
 2. `02_geometry.ipynb` — inspect road geometry and nearby segments.
 3. `03_label_points.ipynb` — align GPS points to reference routes.
 4. `04_candidates.ipynb` — generate candidate road segments.
-5. `05_features.ipynb` — build candidate features.
-6. `05_features_folds.ipynb` — create shared trip folds and scoring rules.
-7. `06_model_helpers.ipynb` — shared definitions loaded by model notebooks.
-8. `06a_xgb_ranker.ipynb` — tune and train the XGBoost ranker.
+5. `05_feature_helpers.ipynb` — shared feature definitions loaded by notebooks.
+6. `05_features.ipynb` — build candidate features.
+7. `05_features_folds.ipynb` — create shared trip folds and scoring rules.
+8. `06_model_helpers.ipynb` — shared definitions loaded by model notebooks.
+9. `06a_xgb_ranker.ipynb` — tune and train the XGBoost ranker.
+10. `07_student_test.ipynb` — preprocess student-test trips with frozen settings.
 
 The notebooks use NumPy, pandas, Matplotlib, Folium, Branca, pyproj,
 Shapely 2, PyArrow, scikit-learn, Optuna, and XGBoost.

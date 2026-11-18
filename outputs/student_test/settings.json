@@ -1,0 +1,6 @@
+{
+  "radius_m": 210,
+  "K": 100,
+  "flag_threshold_m": 208.3570580176556,
+  "cost_cap_m": 150.0
+}

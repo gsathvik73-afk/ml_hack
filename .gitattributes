@@ -1,3 +1,4 @@
 outputs/candidates/*candidates.csv filter=lfs diff=lfs merge=lfs -text
 results/**/oof_*.csv filter=lfs diff=lfs merge=lfs -text
 outputs/features/*.parquet filter=lfs diff=lfs merge=lfs -text
+outputs/student_test/*.parquet filter=lfs diff=lfs merge=lfs -text
